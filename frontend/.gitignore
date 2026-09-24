@@ -25,3 +25,4 @@ Thumbs.db
 .idea/
 *.local
 package-lock.json
+node_modules/
