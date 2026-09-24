@@ -16,6 +16,10 @@ const aiRoutes = require('./ai.routes');
 
 const router = express.Router();
 
+router.get('/health', (_req, res) => {
+  res.status(200).json({ success: true, message: 'ServiceDesk Pro API is running', timestamp: new Date().toISOString() });
+});
+
 router.use('/auth', authRoutes);
 router.use('/users', userRoutes);
 router.use('/tickets', ticketRoutes);
@@ -28,9 +32,5 @@ router.use('/ai', aiRoutes);
 router.use('/audit-logs', auditRoutes);
 
 router.use('/', commentRoutes);
-
-router.get('/health', (_req, res) => {
-  res.status(200).json({ success: true, message: 'ServiceDesk Pro API is running', timestamp: new Date().toISOString() });
-});
 
 module.exports = router;
