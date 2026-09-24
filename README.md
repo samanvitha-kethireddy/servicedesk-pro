@@ -7,7 +7,7 @@ classification (Groq + Llama 3.3).
 ## Stack
 - **Backend**: Node.js, Express, MongoDB (Mongoose), JWT auth
 - **Frontend**: React (Vite), Tailwind CSS, Recharts
-- **AI**: groq-sdk (llama-3.3-70b-versatile, fallback llama-3.1-8b-instant)
+- **AI**: groq-sdk (openai/gpt-oss-120b, fallback openai/gpt-oss-20b)
 - **Deploy**: Render (backend) + Vercel (frontend)
 
 ## Local Setup
